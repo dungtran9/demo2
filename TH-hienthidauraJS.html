@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        function showMessage() {
+            alert('XinChao!')
+
+        }
+    </script>
+</fieldset>
+<fieldset>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        function showMessage(){
+            document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+        }
+    </script>
+</fieldset>
+<fieldset>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        function showMessage(){
+            document.write('Xin chào!');
+        }
+    </script>
+</fieldset>
+<fieldset>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+    <script>
+        function showMessage(){
+            console.log('Xin chào!');
+        }
+    </script>
+</fieldset>
+
+</body>
+</html>
