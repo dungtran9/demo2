@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <table>
+            <tr>
+                <td colspan="2"><input type="number" id="sh1"></td>
+                <td colspan="2"><input type="number" id="sh2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="cong();"> Adition(+)</button>
+                </td>
+                <td>
+                    <button type="button" onclick="tru();"> Subtration(-)</button>
+                </td>
+                <td>
+                    <button type="button" onclick="nhan();"> Multiplication(X)</button>
+                </td>
+                <td>
+                    <button type="button" onclick="chia();"> Divison(/)</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td colspan="3"><input type="number" id="kq"></td>
+            </tr>
+
+        </table>
+    </fieldset>
+</form>
+<script>
+    function cong() {
+        let so1 = parseInt(document.getElementById("sh1").value);
+        let so2 = parseInt(document.getElementById("sh2").value);
+        let kq = so1 + so2;
+        document.getElementById("kq").value = kq;
+
+    }
+
+    function tru() {
+        let so1 = parseInt(document.getElementById("sh1").value);
+        let so2 = parseInt(document.getElementById("sh2").value);
+        let kq = so1 - so2;
+        document.getElementById("kq").value = kq;
+
+    }
+
+    function nhan() {
+        let so1 = parseInt(document.getElementById("sh1").value);
+        let so2 = parseInt(document.getElementById("sh2").value);
+        let kq = so1 * so2;
+        document.getElementById("kq").value = kq;
+    }
+
+    function chia() {
+        let so1 = parseInt(document.getElementById("sh1").value);
+        let so2 = parseInt(document.getElementById("sh2").value);
+        let kq = so1 / so2;
+        document.getElementById("kq").value = kq;
+        kq.toFixed(2)
+    }
+</script>
+</body>
+</html>

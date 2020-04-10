@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let inputVatly;
+    let inputHoahoc;
+    let inputSinhhoc;
+
+    inputVatly =prompt("nhap diem vat ly: ");
+    inputHoahoc =prompt("nhap diem hoa hoc: ");
+    inputSinhhoc =prompt("nhap diem sinh hoc: ");
+    let v=parseInt(inputVatly);
+    let h=parseInt(inputHoahoc);
+    let s=parseInt(inputSinhhoc);
+    let tongdiem= v + h+ s;
+    document.write("Tong Diem la " + tongdiem);
+
+    let diemtrungbinh=tongdiem/3;
+    document.write(" ,Diem Trung Binh la " + diemtrungbinh);
+</script>
+
+
+</body>
+</html>

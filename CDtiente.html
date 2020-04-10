@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <h4>Amount &nbsp;<input type="text" id="Amount"></h4>
+        <h4>From Currency
+            <select id="02">
+                <option value="1">USD</option>
+                <option value="23000">VN</option>
+            </select>
+        </h4>
+        <h4>To Currency
+            <select id="01">
+                <option value="23000">VN</option>
+                <option value="1">USD</option>
+            </select>
+        </h4>
+        <button onclick="change();" style="background-color: blueviolet">Convert</button>
+    </fieldset>
+</form>
+<script>
+
+    function change() {
+        let amount = parseInt(document.getElementById("Amount").value);
+        let FromCurrency = parseInt(document.getElementById("01").value);
+        let ToCurrency = parseInt(document.getElementById("02").value);
+        let result = calsum(amount, FromCurrency, ToCurrency);
+        alert(result);
+
+        function calsum(a, b, c) {
+            let result;
+            result = a * b / c;
+            return result;
+        }
+    }
+        </script>
+</body>
+</html>
